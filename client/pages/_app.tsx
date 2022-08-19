@@ -6,7 +6,13 @@ const activeChainId = ChainId.Mainnet;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider
+      desiredChainId={activeChainId}
+      authConfig={{
+        authUrl: "/api/auth",
+        domain: "thirdweb.com",
+      }}
+    >
       <Component {...pageProps} />
     </ThirdwebProvider>
   );

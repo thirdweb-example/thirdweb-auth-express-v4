@@ -1,16 +1,26 @@
 ## Getting Started
 
-Create a project using this example:
+This example demonstrates how to use the thirdweb auth SDK with an express backend and react frontend.
+
+To run this project, you need will first need to install the dependencies for the client and express backend with the following commands:
 
 ```bash
-npx thirdweb create --template next-typescript-starter
+cd clienet && npm install
+cd express && npm install
+# or
+cd client && yarn install
+cd express && yarn install
 ```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Then, you can run the project by running the following two commands in separate terminals:
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our hooks to work.
-
-on `pages/index.tsx`, you'll find the `useMetamask` hook that we use to connect the user's wallet to MetaMask, `useDisconnect` that we use to disconnect it, and `useAddress` to check the user's wallet address once connected. 
+```bash
+cd client && npm run dev
+cd express && npm run dev
+# or
+cd client && yarn dev
+cd express && yarn dev
+```
 
 ## Learn More
 

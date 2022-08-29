@@ -373,8 +373,10 @@
   resolved "https://registry.yarnpkg.com/@multiformats/base-x/-/base-x-4.0.1.tgz#95ff0fa58711789d53aefb2590a8b7a4e715d121"
   integrity sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==
 
-"@thirdweb-dev/auth@file:.yalc/@thirdweb-dev/auth":
-  version "0.1.0"
+"@thirdweb-dev/auth@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@thirdweb-dev/auth/-/auth-0.2.0.tgz#19859448b08a08efd4d0c551b4ad624c6a8739bc"
+  integrity sha512-hme+nJGp5MEMMsF4L3IRdHvEnODmRUYsp3w/PU+nkQ7doj4ZMgUN1PAxMyZ83Tlub2MaW7ClRFTyfyf0I39HEw==
   dependencies:
     cookie "^0.5.0"
     cookie-parser "^1.4.6"

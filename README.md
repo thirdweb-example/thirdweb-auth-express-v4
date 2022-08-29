@@ -1,11 +1,11 @@
 ## Getting Started
 
-This example demonstrates how to use the thirdweb auth SDK with an express backend and react frontend.
+This example demonstrates how to use thirdweb Auth with an express backend and react frontend.
 
 To run this project, you need will first need to install the dependencies for the client and express backend with the following commands:
 
 ```bash
-cd clienet && npm install
+cd client && npm install
 cd express && npm install
 # or
 cd client && yarn install
@@ -26,8 +26,8 @@ cd express && yarn dev
 
 To learn more about thirdweb and Next.js, take a look at the following resources:
 
+- [thirdweb Auth Documentation](https://docs.thirdweb.com/auth) - learn about thirdweb Auth.
 - [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
 - [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 

@@ -9,7 +9,7 @@ const PORT = 5000;
 
 ThirdwebAuth(app, {
   privateKey: process.env.THIRDWEB_AUTH_PRIVATE_KEY || "",
-  domain: process.env.THIRDWEB_AUTH_DOMAIN || "",
+  domain: "localhost:3000",
 });
 
 app.get("/secret", (req, res) => {

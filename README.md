@@ -15,11 +15,11 @@ cd express && yarn install
 Then, you can run the project by running the following two commands in separate terminals:
 
 ```bash
-cd client && npm run dev
-cd express && npm run dev
+npm run dev
+npm run server
 # or
-cd client && yarn dev
-cd express && yarn dev
+yarn dev
+yarn server
 ```
 
 ## Learn More

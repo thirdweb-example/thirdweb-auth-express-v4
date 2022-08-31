@@ -8,7 +8,7 @@ const app = express();
 const PORT = 5000;
 
 ThirdwebAuth(app, {
-  privateKey: process.env.THIRDWEB_AUTH_PRIVATE_KEY || "",
+  privateKey: process.env.ADMIN_PRIVATE_KEY || "",
   domain: "localhost:3000",
 });
 

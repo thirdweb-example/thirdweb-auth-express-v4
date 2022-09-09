@@ -9,7 +9,7 @@ const PORT = 5000;
 
 ThirdwebAuth(app, {
   privateKey: process.env.ADMIN_PRIVATE_KEY || "",
-  domain: "localhost:3000",
+  domain: "example.com",
 });
 
 app.get("/secret", (req, res) => {
@@ -18,13 +18,13 @@ app.get("/secret", (req, res) => {
   if (!user) {
     return res.status(401).json({
       message: "Not authorized.",
-    })
+    });
   }
 
   return res.status(200).json({
-    message: "This is a secret... don't tell anyone."
+    message: "This is a secret... don't tell anyone.",
   });
-})
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);

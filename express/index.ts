@@ -5,7 +5,7 @@ import { config } from "dotenv";
 config();
 
 const app = express();
-const PORT = 5000;
+const PORT = 8000;
 
 ThirdwebAuth(app, {
   privateKey: process.env.ADMIN_PRIVATE_KEY || "",

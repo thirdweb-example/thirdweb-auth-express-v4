@@ -1,16 +1,19 @@
 import express from "express";
-import { getUser, ThirdwebAuth } from "@thirdweb-dev/auth/express";
+import { ThirdwebAuth } from "@thirdweb-dev/auth/express";
 import { config } from "dotenv";
+import { PrivateKeyWallet } from "@thirdweb-dev/wallets";
 
 config();
 
 const app = express();
 const PORT = 8000;
 
-ThirdwebAuth(app, {
-  privateKey: process.env.ADMIN_PRIVATE_KEY || "",
+const { thirdwebAuth, getUser } = ThirdwebAuth({
   domain: "example.com",
+  wallet: new PrivateKeyWallet(process.env.ADMIN_PRIVATE_KEY || ""),
 });
+
+app.use(thirdwebAuth);
 
 app.get("/secret", (req, res) => {
   const user = getUser(req);

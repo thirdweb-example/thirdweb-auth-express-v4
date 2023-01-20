@@ -4,6 +4,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "dev": "cd client && npm run dev",
-    "server": "cd express && npm run dev"
+    "server": "cd server && npm run dev"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6"
   }
 }

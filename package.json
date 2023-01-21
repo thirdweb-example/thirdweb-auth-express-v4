@@ -3,7 +3,7 @@
   "repository": "https://github.com/thirdweb-example/thirdweb-auth-express.git",
   "license": "Apache-2.0",
   "scripts": {
-    "dev": "cd client && npm run dev",
+    "client": "cd client && npm run dev",
     "server": "cd server && npm run dev"
   },
   "dependencies": {

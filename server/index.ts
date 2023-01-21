@@ -8,14 +8,14 @@ config();
 const app = express();
 const PORT = 8000;
 
-const { thirdwebAuthRouter, thirdwebAuthMiddleware, getUser } = ThirdwebAuth({
+const { authRouter, authMiddleware, getUser } = ThirdwebAuth({
   domain: process.env.THIRDWEB_AUTH_DOMAIN || "",
   wallet: new PrivateKeyWallet(process.env.THIRDWEB_AUTH_PRIVATE_KEY || ""),
 });
 
-app.use("/auth", thirdwebAuthRouter);
+app.use("/auth", authRouter);
 
-app.get("/secret", thirdwebAuthMiddleware, async (req, res) => {
+app.get("/secret", authMiddleware, async (req, res) => {
   const user = await getUser(req);
 
   if (!user) {

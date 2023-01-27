@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThirdwebProvider
       desiredChainId={activeChainId}
       authConfig={{
+        domain: process.env.NEXT_PUBLIC_THIRDWEB_AUTH_DOMAIN || "",
         authUrl: "/api/auth",
-        domain: "example.com",
       }}
     >
       <Component {...pageProps} />
